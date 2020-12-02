@@ -26,7 +26,7 @@ I used [Robo 3T](https://robomongo.org/download), a GUI for mongodb to visualize
 * To stop crawling during the process, press `Ctrl`+`C`
 
 ### Options
-**timesofindia**: `business` (default)
-**firstpost**: `all` (default), `news`, `sports`, `business`
-**indiaexpress**: `all` (default), `news`, `sports`, `business`
-**moneycontrol**: `all` (default), `markets`, `mutual-funds`
+* **timesofindia**: `business` (default)
+* **firstpost**: `all` (default), `news`, `sports`, `business`
+* **indiaexpress**: `all` (default), `news`, `sports`, `business`
+* **moneycontrol**: `all` (default), `markets`, `mutual-funds`
