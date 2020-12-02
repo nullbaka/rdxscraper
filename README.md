@@ -25,7 +25,9 @@ I used [Robo 3T](https://robomongo.org/download), a GUI for mongodb to visualize
 * **moneycontrol** and **timesofindia** support `pages` as an option. **firstpost** and **indianexpress** do not support this option
 * To stop crawling during the process, press `Ctrl`+`C`
 
-### Options
+Example: `scrapy crawl moneycontrol -a category=markets -a pages=10`
+
+## Options
 * **timesofindia**: `business` (default)
 * **firstpost**: `all` (default), `news`, `sports`, `business`
 * **indiaexpress**: `all` (default), `news`, `sports`, `business`
