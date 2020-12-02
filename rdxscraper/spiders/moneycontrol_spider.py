@@ -13,7 +13,7 @@ class MoneyControlSpider(scrapy.Spider):
         }
     }
 
-    def __init__(self, category=None, pages=5, *args, **kwargs):
+    def __init__(self, category="all", pages=5, *args, **kwargs):
         super(MoneyControlSpider, self).__init__(*args, **kwargs)
         self.category = category
         self.pages = int(pages)
@@ -21,7 +21,7 @@ class MoneyControlSpider(scrapy.Spider):
             self.scrape_url = ["https://www.moneycontrol.com/news/business/mutual-funds/"]
         elif category=="markets":
             self.scrape_url = ["https://www.moneycontrol.com/news/business/markets/"]
-        elif category==None:
+        elif category=="all":
             self.scrape_url = ["https://www.moneycontrol.com/news/business/mutual-funds/",
                                "https://www.moneycontrol.com/news/business/markets/"]
         else:
