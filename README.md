@@ -21,8 +21,8 @@ I used [Robo 3T](https://robomongo.org/download), a GUI for mongodb to visualize
 
 * There are four spiders: **timesofindia**, **firstpost**, **indianexpress**, **moneycontrol**.
 * To run them in default mode, simply command: `scrapy crawl <name_of_spider>`.
-* To run on news category use `-a category=<category>`: `scrapy crawl indianexpress -a category=sports`
-* **moneycontrol** and **timesofindia** support `pages` as an option. **firstpost** and **indianexpress** do not support this option
+* To run on news category use `-a category=<category>`
+* **moneycontrol** and **timesofindia** support `pages` as an option, `-a pages=10`. **firstpost** and **indianexpress** do not support this option
 * To stop crawling during the process, press `Ctrl`+`C`
 
 Example: `scrapy crawl moneycontrol -a category=markets -a pages=10`
